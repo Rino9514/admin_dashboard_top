@@ -14,6 +14,14 @@ html{
     font-family:  'Roboto', sans-serif;
     height: 100%;
     font-size: 32px;
+
+    --v_white_color: #ffffff;
+    --v_blue_light_color: #2892d0;
+    --v_blue_dark_color: #1c6996;
+    --v_blue_hyper_dark_color: #134b6b;
+    --v_grey_light_color:#e1e7ef;
+    --v_grey_dark_color:#8d8e91;
+    --v_grey_blur:#b8b8b8;
 }
 
 .container {
@@ -24,7 +32,7 @@ html{
 }
 
 .container > * {
-    padding: 25px;
+    /* padding: 25px; */
 }
 
 .head_panel {
@@ -37,7 +45,7 @@ html{
 }
 
 .head_bar input{
-    background-color: #e1e7ef;
+    background-color: var(--v_grey_light_color);
     border-radius: 30px;
     font-size: 1rem;
     width: 100%;
@@ -53,20 +61,21 @@ html{
 
 .head_buttons button{
     border-radius: 30px;
-    background-color: #2892d0 ;
-    color: white;
+    background-color: var(--v_blue_light_color) ;
+    color: var(--v_white_color);
     font-size: 0.6rem;
     width: 125px;
     height: 50px;
     
 }
 .side_panel {
-    background-color: #2892d0;
+    background-color: var(--v_blue_light_color);
     grid-row: 1 / -1;
+    box-shadow: 3px 0px 5px var(--v_grey_blur);
 }
 
 .side_panel > *{
-    background-color: #2892d0;
+    background-color: var(--v_blue_light_color);
     grid-row: 1 / -1;
 }
 
@@ -76,13 +85,75 @@ html{
 
     font-weight: bold;
     font-size: 0.8rem;
-    color: white;
+    color: var(--v_white_color);
 }
 
-.main_menu, 
-.setting_menu{
+.sidebar_main_menu, 
+.sidebar_setting_menu{
     list-style-type: none;
 }
+
+.sidebar_main_menu > li > a, 
+.sidebar_setting_menu > li > a{
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    padding: 10px;
+}
+
+.title_dashboard{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.title_dashboard > *{
+    justify-self: center;
+    align-self: center;
+}
+
+
+img{
+    height: 0.9rem;
+    filter: invert(1);
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: var(--v_white_color);
+    transition: all 0.25s ease; 
+}
+
+a img {
+  transition: filter 0.25s ease;
+}
+
+a:active img {
+  filter: invert(1) brightness(0.6);
+}
+
+a:link,
+a:visited {
+  color: var(--v_white_color);
+}
+
+a:focus {
+  outline: none;
+  border-left: 0px solid var(--v_blue_light_color);
+  background: var(--v_blue_light_color);
+}
+
+a:hover {
+  border-left: 5px solid var(--v_white_color);
+  background: var(--v_blue_dark_color);
+}
+
+a:active {
+  border-left: 5px solid var(--v_white_color);
+  background: var(--v_blue_hyper_dark_color);
+  color: var(--v_grey_dark_color);
+}
+
 
 .content_panel {
     background-color: purple;
