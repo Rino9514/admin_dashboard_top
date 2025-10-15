@@ -58,7 +58,6 @@ img{
     gap: 10px;
     padding: 30px 0px 0px 20px;
     z-index: 6;
-
 }
 
 .search_bar input[type="image"]{
@@ -73,11 +72,25 @@ img{
     flex:1;
 }
 
+.head_notifications {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 60px;
+}
+
+.avatar{
+    border-radius: 50%;
+    height: 1.8rem;
+}
+
 .head_buttons {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap:20px;
-    
+    padding-right: 60px;    
 }
 
 .head_buttons button{
