@@ -1,62 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles.css" rel="stylesheet">
-        <title>Admin Dashboard</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="head_panel">
-                <form class="search_bar" action="https://httpbin.org/post" method="post">
-                    <input type="image" src="./assets/icons/search.svg" alt="search_icon" />
-                    <input id="search" type="search" name="search">
-                </form>
-                <div class="head_notifications">
-                    <img src="./assets/icons/notification.svg">
-                    <img class="avatar" src="./assets/avatars/morgan.jpg">
-                    <p>Morgan Oakley</p>
-                </div>
-                <div class="head_greating">
-                    <img class="avatar" src="./assets/avatars/morgan.jpg">
-                    <p>Hi, there<br><span>Morgan Oakley (@morgan)</span></p>
-                </div>
-                <div class="head_buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
-            </header>
-            <div class="side_panel">
-                <nav>
-                    <h2 class="title_dashboard"><img src="./assets/icons/dashboard.svg" alt="dashboard_icon">Dashboard</h2>
-                    <ul class="sidebar_main_menu">
-                        <li><a href="#"><img src="./assets/icons/home.svg" alt="home-icon">Home</a></li>
-                        <li><a href="#"><img src="./assets/icons/profile.svg" alt="profile-icon">Profile</a></li>
-                        <li><a href="#"><img src="./assets/icons/message.svg" alt="message-icon">Messages</a></li>
-                        <li><a href="#"><img src="./assets/icons/history.svg" alt="history-icon">History</a></li>
-                        <li><a href="#"><img src="./assets/icons/tasks.svg" alt="tasks-icon">Tasks</a></li>
-                        <li><a href="#"><img src="./assets/icons/communities.svg" alt="communities-icon">Communities</a></li>
-                    </ul>
-                    <ul class="sidebar_setting_menu">
-                        <li><a href="#"><img src="./assets/icons/settings.svg" alt="settings-icon">Settings</a></li>
-                        <li><a href="#"><img src="./assets/icons/support.svg" alt="support-icon">Support</a></li>
-                        <li><a href="#"><img src="./assets/icons/privacy.svg" alt="privacy-icon">Privacy</a></li>
-                    </ul>
-                </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="head_panel">
+      <form class="search_bar" action="https://httpbin.org/post" method="post">
+        <input type="image" src="./assets/icons/search.svg" alt="search_icon" />
+        <input id="search" type="search" name="search">
+      </form>
+
+      <div class="head_notifications">
+        <img src="./assets/icons/notification.svg">
+        <img class="avatar" src="./assets/avatars/morgan.jpg">
+        <p>Morgan Oakley</p>
+      </div>
+
+      <div class="head_greating">
+        <img class="avatar" src="./assets/avatars/morgan.jpg">
+        <p>Hi, there<br><span>Morgan Oakley (@morgan)</span></p>
+      </div>
+
+      <div class="head_buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </header>
+
+    <div class="side_panel">
+      <nav>
+        <h2 class="title_dashboard"><img src="./assets/icons/dashboard.svg" alt="dashboard_icon">Dashboard</h2>
+        <ul class="sidebar_main_menu">
+          <li><a href="#"><img src="./assets/icons/home.svg" alt="home-icon">Home</a></li>
+          <li><a href="#"><img src="./assets/icons/profile.svg" alt="profile-icon">Profile</a></li>
+          <li><a href="#"><img src="./assets/icons/message.svg" alt="message-icon">Messages</a></li>
+          <li><a href="#"><img src="./assets/icons/history.svg" alt="history-icon">History</a></li>
+          <li><a href="#"><img src="./assets/icons/tasks.svg" alt="tasks-icon">Tasks</a></li>
+          <li><a href="#"><img src="./assets/icons/communities.svg" alt="communities-icon">Communities</a>
+          </li>
+        </ul>
+        <ul class="sidebar_setting_menu">
+          <li><a href="#"><img src="./assets/icons/settings.svg" alt="settings-icon">Settings</a></li>
+          <li><a href="#"><img src="./assets/icons/support.svg" alt="support-icon">Support</a></li>
+          <li><a href="#"><img src="./assets/icons/privacy.svg" alt="privacy-icon">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="main">
+      <p>Your Projects</p>
+      <div class="content_panel">
+        <div class="card">
+          <div>
+            <p class="title">Super Cool Project</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, facere! Dolorem quisquam perspiciatis
+              porro rerum quae odit fuga error consequatur magni, veritatis facere illum, accusamus magnam culpa a sunt
+              non.</p>
+          </div>
+            <div class="card_options">
+              <img src="./assets/icons/favorite.svg" alt="favorite-icon">
+              <img src="./assets/icons/eye-plus-outline.svg" alt="eye-plus-outline-icon">
+              <img src="./assets/icons/fork.svg" alt="fork-icon">
             </div>
-            <div class="content_panel">
-
-            </div>
-
-            <div class="annoncement_panel">
-
-            </div>
-            <div class="trending_panel">
-
-            </div>
-
         </div>
-    </body>
+        <div class="card">
+          <div>
+            <p class="title">Less Cool Project</p>
+            <p>Sint ipsa dolores quibusdam deleniti ipsam blanditiis nulla, rem repellat sit alias, vitae molestias dolorum
+              exercitationem perferendis? Tenetur esse molestiae, aliquid, impedit reiciendis excepturi tempore
+              reprehenderit culpa perspiciatis repellendus blanditiis.</p>
+          </div>
+            <div class="card_options">
+              <img src="./assets/icons/favorite.svg" alt="favorite-icon">
+              <img src="./assets/icons/eye-plus-outline.svg" alt="eye-plus-outline-icon">
+              <img src="./assets/icons/fork.svg" alt="fork-icon">
+            </div>
+        </div>
+        <div class="card">
+          <div>
+            <p class="title">Impossible App</p>
+            <p>Libero voluptas nemo asperiores nostrum quasi architecto laboriosam aut, veritatis, deleniti perspiciatis
+              quos rem dolorum odio nobis voluptatibus numquam, expedita excepturi! Vel esse dolor temporibus ipsam quam sed
+              iusto aperiam?</p>
+          </div>
+            <div class="card_options">
+              <img src="./assets/icons/favorite.svg" alt="favorite-icon">
+              <img src="./assets/icons/eye-plus-outline.svg" alt="eye-plus-outline-icon">
+              <img src="./assets/icons/fork.svg" alt="fork-icon">
+            </div>
+        </div>
+        <div class="card">
+          <div>
+            <p class="title">Easy Peasy App</p>
+            <p>Repellat quod illo natus blanditiis aliquam. Iste quas debitis hic ipsam error, magni consequuntur libero
+              quam facilis at commodi assumenda sunt recusandae voluptate a voluptatibus quasi, necessitatibus nam velit
+              voluptatum.</p>
+          </div>
+            <div class="card_options">
+              <img src="./assets/icons/favorite.svg" alt="favorite-icon">
+              <img src="./assets/icons/eye-plus-outline.svg" alt="eye-plus-outline-icon">
+              <img src="./assets/icons/fork.svg" alt="fork-icon">
+            </div>
+        </div>
+        <div class="card">
+          <div>
+            <p class="title">Add Blocker</p>
+            <p>Non nostrum veritatis est, omnis sit, ullam dolor reiciendis eius autem ipsam placeat, laborum dolore magni
+              officia ipsum beatae quibusdam fugiat nisi at a commodi repellat asperiores. Quibusdam, unde velit.</p>
+          </div>
+            <div class="card_options">
+              <img src="./assets/icons/favorite.svg" alt="favorite-icon">
+              <img src="./assets/icons/eye-plus-outline.svg" alt="eye-plus-outline-icon">
+              <img src="./assets/icons/fork.svg" alt="fork-icon">
+            </div>
+        </div>
+        <div class="card">
+          <div>
+            <p class="title">Money Maker</p>
+            <p>Porro quis consequuntur qui optio maxime magni nulla asperiores earum eaque provident, quidem voluptatibus
+              excepturi consectetur maiores deleniti accusantium nisi omnis natus facere deserunt accusamus. Labore nisi
+              quae nam possimus.</p>
+          </div>
+            <div class="card_options">
+              <img src="./assets/icons/favorite.svg" alt="favorite-icon">
+              <img src="./assets/icons/eye-plus-outline.svg" alt="eye-plus-outline-icon">
+              <img src="./assets/icons/fork.svg" alt="fork-icon">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="side_announcement">
+      <p>Announcement</p>
+      <div class="card">
+        <div>
+          <p class="title">Site Maintenance</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione corrupti quibusdam quo error nostrum adipisci beatae eligendi ea animi cum, exercitationem iure ducimus quisquam quia quis quaerat nihil tenetur?</p>
+        </div>
+        <div>
+          <p class="title">Community Share Day</p>
+          <p>Doloremque, cumque cum praesentium fuga ut necessitatibus tempore aperiam accusamus, minima ipsam pariatur? Velit inventore doloribus eum iusto earum sapiente voluptatum in eius fugiat, distinctio ab doloremque facere accusamus non.</p>
+        </div>
+        <div>
+          <p class="title">Update Privacy Policy</p>
+          <p>Alias reprehenderit saepe provident quaerat at vitae dolorum sapiente obcaecati soluta eum dolore explicabo voluptate asperiores enim fugit maxime laborum, debitis deserunt nostrum rerum inventore quis. Qui distinctio minus omnis!</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p>Trending</p>
+      <div class="trending_panel">
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
