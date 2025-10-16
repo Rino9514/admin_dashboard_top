@@ -44,6 +44,7 @@ img{
     grid-row: 1 / 2;
 
     display: grid;
+    align-items: center;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     box-shadow: 1px 0px 5px var(--v_grey_blur);
@@ -56,7 +57,7 @@ img{
     align-items: center;
 
     gap: 10px;
-    padding: 30px 0px 0px 20px;
+    padding: 0px 0px 0px 20px;
     z-index: 6;
 }
 
@@ -80,10 +81,36 @@ img{
     padding-right: 60px;
 }
 
-.avatar{
+
+.head_notifications .avatar{
     border-radius: 50%;
     height: 1.8rem;
 }
+
+.head_greating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    padding: 10px 0px 20px 20px;
+}
+
+.head_greating p{
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.head_greating p span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.head_greating .avatar{
+    border-radius: 50%;
+    height: 2.5rem;
+}
+
 
 .head_buttons {
     display: flex;
