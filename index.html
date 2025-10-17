@@ -10,7 +10,7 @@
 
 <body>
   <div class="container">
-    <header class="head_panel">
+    <header class="head_panel shadow">
       <form class="search_bar" action="https://httpbin.org/post" method="post">
         <input type="image" src="./assets/icons/search.svg" alt="search_icon" />
         <input id="search" type="search" name="search">
@@ -36,20 +36,20 @@
 
     <div class="side_panel">
       <nav>
-        <h2 class="title_dashboard"><img src="./assets/icons/dashboard.svg" alt="dashboard_icon">Dashboard</h2>
+        <h2 class="title_dashboard"><img class="invert-img" src="./assets/icons/dashboard.svg" alt="dashboard_icon">Dashboard</h2>
         <ul class="sidebar_main_menu">
-          <li><a href="#"><img src="./assets/icons/home.svg" alt="home-icon">Home</a></li>
-          <li><a href="#"><img src="./assets/icons/profile.svg" alt="profile-icon">Profile</a></li>
-          <li><a href="#"><img src="./assets/icons/message.svg" alt="message-icon">Messages</a></li>
-          <li><a href="#"><img src="./assets/icons/history.svg" alt="history-icon">History</a></li>
-          <li><a href="#"><img src="./assets/icons/tasks.svg" alt="tasks-icon">Tasks</a></li>
-          <li><a href="#"><img src="./assets/icons/communities.svg" alt="communities-icon">Communities</a>
+          <li><a href="#"><img class="invert-img" src="./assets/icons/home.svg" alt="home-icon">Home</a></li>
+          <li><a href="#"><img class="invert-img" src="./assets/icons/profile.svg" alt="profile-icon">Profile</a></li>
+          <li><a href="#"><img class="invert-img" src="./assets/icons/message.svg" alt="message-icon">Messages</a></li>
+          <li><a href="#"><img class="invert-img" src="./assets/icons/history.svg" alt="history-icon">History</a></li>
+          <li><a href="#"><img class="invert-img" src="./assets/icons/tasks.svg" alt="tasks-icon">Tasks</a></li>
+          <li><a href="#"><img class="invert-img" src="./assets/icons/communities.svg" alt="communities-icon">Communities</a>
           </li>
         </ul>
         <ul class="sidebar_setting_menu">
-          <li><a href="#"><img src="./assets/icons/settings.svg" alt="settings-icon">Settings</a></li>
-          <li><a href="#"><img src="./assets/icons/support.svg" alt="support-icon">Support</a></li>
-          <li><a href="#"><img src="./assets/icons/privacy.svg" alt="privacy-icon">Privacy</a></li>
+          <li><a href="#"><img class="invert-img" src="./assets/icons/settings.svg" alt="settings-icon">Settings</a></li>
+          <li><a href="#"><img class="invert-img" src="./assets/icons/support.svg" alt="support-icon">Support</a></li>
+          <li><a href="#"><img class="invert-img" src="./assets/icons/privacy.svg" alt="privacy-icon">Privacy</a></li>
         </ul>
       </nav>
     </div>
@@ -57,7 +57,7 @@
     <section class="main">
       <p>Your Projects</p>
       <div class="content_panel">
-        <div class="card">
+        <div class="card shadow">
           <div>
             <p class="title">Super Cool Project</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, facere! Dolorem quisquam perspiciatis
@@ -70,7 +70,7 @@
               <img src="./assets/icons/fork.svg" alt="fork-icon">
             </div>
         </div>
-        <div class="card">
+        <div class="card shadow">
           <div>
             <p class="title">Less Cool Project</p>
             <p>Sint ipsa dolores quibusdam deleniti ipsam blanditiis nulla, rem repellat sit alias, vitae molestias dolorum
@@ -83,7 +83,7 @@
               <img src="./assets/icons/fork.svg" alt="fork-icon">
             </div>
         </div>
-        <div class="card">
+        <div class="card shadow">
           <div>
             <p class="title">Impossible App</p>
             <p>Libero voluptas nemo asperiores nostrum quasi architecto laboriosam aut, veritatis, deleniti perspiciatis
@@ -96,7 +96,7 @@
               <img src="./assets/icons/fork.svg" alt="fork-icon">
             </div>
         </div>
-        <div class="card">
+        <div class="card shadow">
           <div>
             <p class="title">Easy Peasy App</p>
             <p>Repellat quod illo natus blanditiis aliquam. Iste quas debitis hic ipsam error, magni consequuntur libero
@@ -109,7 +109,7 @@
               <img src="./assets/icons/fork.svg" alt="fork-icon">
             </div>
         </div>
-        <div class="card">
+        <div class="card shadow">
           <div>
             <p class="title">Add Blocker</p>
             <p>Non nostrum veritatis est, omnis sit, ullam dolor reiciendis eius autem ipsam placeat, laborum dolore magni
@@ -121,7 +121,7 @@
               <img src="./assets/icons/fork.svg" alt="fork-icon">
             </div>
         </div>
-        <div class="card">
+        <div class="card shadow">
           <div>
             <p class="title">Money Maker</p>
             <p>Porro quis consequuntur qui optio maxime magni nulla asperiores earum eaque provident, quidem voluptatibus
@@ -139,7 +139,7 @@
 
     <section class="side_announcement">
       <p>Announcement</p>
-      <div class="card">
+      <div class="card shadow">
         <div>
           <p class="title">Site Maintenance</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione corrupti quibusdam quo error nostrum adipisci beatae eligendi ea animi cum, exercitationem iure ducimus quisquam quia quis quaerat nihil tenetur?</p>
@@ -155,9 +155,25 @@
       </div>
     </section>
 
-    <section>
+    <section class="trending_panel">
       <p>Trending</p>
-      <div class="trending_panel">
+      <div class="card shadow">
+        <div>
+          <img class="avatar" src="./assets/avatars/bob.jpg" alt="bob-avatar">
+          <p>@bob<br><span>World Peace Builder</span></p>
+        </div>
+        <div>
+          <img class="avatar" src="./assets/avatars/josh.jpg" alt="josh-avatar">
+          <p>@josh<br><span>Super Cool Project</span></p>
+        </div>
+        <div>
+          <img class="avatar" src="./assets/avatars/stephan.jpg" alt="stephan-avatar">
+          <p>@stephan<br><span>Life Changing App</span></p>
+        </div>
+        <div>
+          <img class="avatar" src="./assets/avatars/warren.jpg" alt="warren-avatar">
+          <p>@warren<br><span>No traffic Maker</span></p>
+        </div>
       </div>
     </section>
   </div>
