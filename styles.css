@@ -18,7 +18,9 @@ html {
   font-family: 'Roboto', sans-serif;
   height: 100%;
   font-size: 32px;
+}
 
+:root{
   --v_white_color: #ffffff;
   --v_blue_light_color: #2892d0;
   --v_blue_dark_color: #1c6996;
@@ -40,6 +42,10 @@ html {
 
 img {
   height: 1rem;
+}
+
+.big{
+  height: 1.5rem;
 }
 
 .shadow {
@@ -154,11 +160,6 @@ img {
   grid-row: 1 / -1;
 }
 
-.side_panel > * {
-  background-color: var(--v_blue_light_color);
-  grid-row: 1 / -1;
-}
-
 .side_panel nav {
   display: grid;
   gap: 60px;
@@ -190,6 +191,7 @@ img {
 
   padding: 10px;
   padding-left: 20px;
+  font-size: 1rem;
 }
 
 a {
@@ -229,7 +231,8 @@ a:active {
   color: var(--v_grey_dark_color);
 }
 
-section {
+section,
+main {
   background-color: var(--v_grey_light_color);
   padding:20px;
   overflow: auto;
@@ -240,7 +243,8 @@ section {
   grid-row: 2 / -1;
 }
 
-section > p{
+section > h2,
+main > h2{
   font-size: 0.5rem;
   font-weight: bold;
   padding-bottom: 10px;
@@ -267,6 +271,14 @@ section > p{
   flex-direction: column;
   justify-content: space-between;
   padding:20px;
+
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+ cursor:pointer
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 .card .title{
@@ -289,6 +301,7 @@ section > p{
   gap: 30px;
   align-self: flex-end;
 }
+
 
 .side_announcement {
   grid-column: 4 / 5;
@@ -325,4 +338,22 @@ section > p{
 
 .trending_panel .card div p span{
   color: var(--v_grey_text_card);
+}
+
+.selected{
+  transition: transform 0.2s ease;
+  cursor:pointer
+}
+
+.selected:hover {
+  background-color: var(--v_grey_light_color);
+}
+
+.selected-img {
+  transition: transform 0.2s ease;
+  cursor:pointer
+}
+
+.selected-img:hover {
+  filter: invert(0.6);
 }
